@@ -18,7 +18,7 @@
 
 	<span class="nx">handleClick</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
 		<span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-		<span class="nx">href</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;href&quot;</span><span class="p">);</span>
+		<span class="nx">href</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">currentTarget</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;href&quot;</span><span class="p">);</span>
 		<span class="k">this</span><span class="p">.</span><span class="nx">model</span><span class="p">.</span><span class="nx">handleLink</span><span class="p">(</span><span class="nx">href</span><span class="p">);</span>
 	<span class="p">},</span>
 
